@@ -1,7 +1,8 @@
 // modules/storage_bucket/main.tf
 variable "bucket_name" {
-  description = "The name of the storage bucket (must be globally unique)"
+  description = "Name of the storage bucket"
   type        = string
+  default     = "my-default-bucket"
 }
 
 variable "location" {
