@@ -1,5 +1,5 @@
 module "test_bucket" {
   source      = "../../modules/storage_bucket"
-  bucket_name = "test-unique-bucket-2025"
-  location    = "us-central1"
+  bucket_name = var.bucket_name
+  location    = var.location
 }
