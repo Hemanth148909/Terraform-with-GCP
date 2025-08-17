@@ -11,5 +11,12 @@ provider "google" {
   project = "kolantigcp"
   region  = "us-central1"
   zone    = "us-central1-c"
-  credentials = "key.json"
+  credentials = base64decode(var.gcp_credentials)
+}
+
+
+variable "gcp_credentials" {
+  description = "GCP Service Account JSON (base64 encoded)"
+  type        = string
+  sensitive   = true
 }
