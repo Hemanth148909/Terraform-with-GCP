@@ -11,7 +11,7 @@ provider "google" {
   project = "kolantigcp"
   region  = "us-central1"
   zone    = "us-central1-c"
-  credentials = base64decode(var.gcp_credentials)
+  credentials = base64decode(var.GOOGLE_CREDENTIALS)
 }
 
 
