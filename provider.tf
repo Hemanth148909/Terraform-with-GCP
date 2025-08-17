@@ -10,7 +10,6 @@ terraform {
 provider "google" {
   project = "kolantigcp"
   region  = "us-central1"
-  zone    = "us-central1-c"
-  credentials = base64decode(var.GOOGLE_CREDENTIALS)
+  credentials = var.GOOGLE_CREDENTIALS
 }
 
