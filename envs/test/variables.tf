@@ -1,0 +1,24 @@
+// modules/storage_bucket/main.tf
+variable "bucket_name" {
+  description = "The name of the storage bucket (must be globally unique)"
+  type        = string
+}
+
+variable "location" {
+  description = "The location/region of the storage bucket"
+  type        = string
+  default     = "US"
+}
+
+variable "force_destroy" {
+  description = "Whether to force delete the bucket even if it contains objects"
+  type        = bool
+  default     = true
+}
+
+variable "uniform_access" {
+  description = "Enable uniform bucket-level access"
+  type        = bool
+  default     = true
+}
+
