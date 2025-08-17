@@ -8,7 +8,7 @@ variable "bucket_name" {
 variable "location" {
   description = "The location/region of the storage bucket"
   type        = string
-  default     = "US"
+  default     = "us-central1"
 }
 
 variable "force_destroy" {
