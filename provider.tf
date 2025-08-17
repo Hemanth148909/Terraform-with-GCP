@@ -14,9 +14,3 @@ provider "google" {
   credentials = base64decode(var.GOOGLE_CREDENTIALS)
 }
 
-
-variable "gcp_credentials" {
-  description = "GCP Service Account JSON (base64 encoded)"
-  type        = string
-  sensitive   = true
-}
