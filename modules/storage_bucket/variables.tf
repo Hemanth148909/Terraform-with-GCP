@@ -1,3 +1,8 @@
+variable "project_id" {
+  description = "GCP project ID"
+  type        = string
+}
+
 variable "bucket_name" {
   description = "Name of the storage bucket"
   type        = string
