@@ -1,0 +1,12 @@
+# Terraform directories and files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+
+# Ignore GCP service account key
+key.json
+
+# Optional: OS files
+.DS_Store
+*.swp
